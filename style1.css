@@ -1,0 +1,290 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------Styles that are used a lot in the website-------------- */
+.flex{
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-col {
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+/* --------------Header-------------- */
+
+/* The top part of the header */
+.top-bar {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* margin-bottom: 50px;
+    top: 0; */
+    padding: 0px 250px;
+    /* position: fixed; */
+}
+.search-options{
+    display: flex;
+    gap: 40px;
+}
+.option{
+    border: none;
+    height: 100%;
+    padding: 17px 13px;
+    justify-self: flex-start; 
+    cursor: pointer;
+}
+.clicked{
+    background-color: white;
+    border-top: 2px solid #407EC9;
+    color: #679ee1;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px;
+    margin-left: 135px;
+    gap: 60px;
+}
+.search-bar{
+    display: flex;
+   input {
+        border: 1px solid #1A355C;
+        border-radius: 5px;
+        padding: 9px;
+        width: 370px;
+    } 
+}
+.user-options{
+    text-decoration: none;
+    color: #4c4c4c;
+    cursor: pointer;
+}
+
+/* The bottom part of the header */
+.bottom-bar{
+    display: flex;
+    gap: 60px;
+    padding: 5px 250px;
+}
+.bottom-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.bottom-bar ul li a {
+    text-decoration: none;
+    color: #333;
+    /* padding: 15px; */
+    display: block;
+}
+
+header hr {
+    border: 0.5px solid rgba(130, 129, 129, 0.113)
+    
+}
+/* --------------Section 1-------------- */
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* The three images using Grid */
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-self: center;
+    width: 70vw;
+    div, img{
+        display: grid;
+        grid-gap: 10px;
+    }
+}
+
+/* The images using flex */
+.items-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 60vw;
+    justify-content: space-between;
+    align-self: center;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+.button {
+    color: white;
+    background-color: #407EC9;
+    padding: 10px 20px;
+    border: none;
+}
+
+
+/* --------------Section 2-------------- */
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.section-2 h1{
+    margin-bottom: 30px;
+}
+.community{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0px 250px;
+    margin-bottom: 20px;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.post h3 {
+    align-content: center;
+    text-align: center;
+}
+
+
+/* --------------Section 3-------------- */
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #F9F9F9;
+    padding: 10px;
+}
+
+.section-3 h1 {
+    margin: 30px 0px;
+}
+
+.section-3 div {
+    padding: 20px 50px;
+}
+
+
+/* --------------Section 4-------------- */
+
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.section-4 h1 {
+    margin: 30px 0px;
+}
+.reviews {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/* --------------Footer-------------- */
+
+/* The top part of the footer */
+.top-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#F9F9F9;
+    padding: 20px 0px;
+    background-color: #407EC9;
+    gap: 20px;
+}
+footer hr {
+    width: 100%;
+    border: 0.5px solid rgba(155, 155, 155, 0.09);
+}
+
+/* The middle part of the footer */
+.middle-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    color: #F9F9F9;
+    background-color: #407EC9;
+    padding: 30px;
+    
+}
+
+.middle-part div {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;  
+
+}
+
+#sign-up {
+    display: inline;
+}
+#sign-up input {
+    padding: 5px;
+}
+.submit {
+    background-color: #333;
+    color: #F9F9F9;
+    padding: 5px;
+}
+
+
+/* The bottom part of the footer */
+.bottom-part{
+    background-color: #1A355C;
+    color: #F9F9F9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    gap: 100px;
+    padding-left: 380px;
+
+}
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

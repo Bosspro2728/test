@@ -1,0 +1,410 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* --------------Styles that are used a lot in the website-------------- */
+.toggles{
+    display: none;
+    justify-content: start;
+    align-items: start;
+}
+.toggleh{
+    display: none;
+    justify-content: start;
+    align-items: start;
+}
+.flex{
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-col {
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.pointer{
+    cursor: pointer;
+}
+.icon {
+    padding: 10px;
+}
+
+/* --------------Header-------------- */
+
+/* The top part of the header */
+.top-bar {
+    background-color: #eeeeee;
+    justify-content: flex-start;
+    /* margin-bottom: 50px;
+    top: 0; */
+    padding: 0px 250px;
+    /* position: fixed; */
+}
+.search-options{
+    gap: 40px;
+}
+.option{
+    border: none;
+    height: 100%;
+    padding: 17px 13px;
+    justify-self: flex-start; 
+}
+.clicked{
+    background-color: white;
+    border-top: 2px solid #407EC9;
+    color: #679ee1;
+}
+.search{
+    align-items: center;
+    margin: 5px 0px;
+    margin-left: 135px;
+    gap: 60px;
+}
+.search-bar  input {
+    border: 1px solid #1A355C;
+    border-radius: 5px;
+    padding: 9px;
+    width: 370px;
+}
+.user-options{
+    text-decoration: none;
+    color: #4c4c4c;
+}
+
+/* The bottom part of the header */
+.bottom-bar{
+    gap: 60px;
+    padding: 5px 250px;
+}
+.bottom-bar ul {
+    list-style: none;
+    gap: 30px;
+}
+.bottom-bar ul li a {
+    text-decoration: none;
+    color: #333;
+    /* padding: 15px; */
+    display: block;
+}
+
+header hr {
+    border: 0.5px solid rgba(130, 129, 129, 0.113) 
+}
+.option-div {
+    display: inline-flex;
+}
+
+@media only screen and (max-width: 1300px) {
+    .top-bar {
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .search-options{
+        gap: 20px;
+    }
+    .option-div {
+        display: flex;
+    }
+    .search-bar  input {
+        width: 200px;
+    }
+
+}
+/* For mobile */
+@media only screen and (max-width: 600px) {
+    .top-bar{
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 5px;
+    }
+    .search-bar input {
+        border-radius: 0px;
+        width: 100%;
+    }
+
+}
+/* --------------Section 1-------------- */
+
+.section-1 {
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* The three images using Grid */
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-self: center;
+    width: 70vw;
+    div, img{
+        display: grid;
+        grid-gap: 10px;
+    }
+}
+
+/* The images using flex */
+.items-flex {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 60vw;
+    justify-content: space-between;
+    align-self: center;
+}
+.item {
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+.button {
+    color: white;
+    background-color: #407EC9;
+    padding: 10px 20px;
+    border: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    .items-grid {
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        div, img {
+            width: 90%;
+        }
+        img {
+            height: 90%;
+        }
+    }
+    
+
+}
+
+/* For mobile */
+@media only screen and (max-width: 600px) {
+    .items-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    .items-flex {
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+        align-self: auto;
+    }
+    .item {
+        justify-content: start;
+    }
+}
+
+
+/* --------------Section 2-------------- */
+
+.section-2 {
+    width: 100%;
+    margin-top: 50px;
+}
+.section-2 h1{
+    margin-bottom: 30px;
+}
+.community{
+    gap: 10px;
+    padding: 0px 250px;
+    margin-bottom: 20px;
+}
+.community div h3,h6 {
+    align-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+    .section-2 {
+        text-align: center;
+        overflow-x: hidden;
+    }
+    .community {
+        justify-content: start;
+        align-items: start;
+        padding: 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section-2 {
+        text-align: center;
+        overflow-x: hidden;
+    }
+    .community {
+        justify-content: start;
+        align-items: start;
+        padding: 0px 10px;
+    }
+}
+
+
+/* --------------Section 3-------------- */
+
+.section-3 {
+    margin-top: 20px;
+    background-color: #F9F9F9;
+    padding: 10px;
+}
+
+.section-3 h1 {
+    margin: 30px 0px;
+}
+
+.section-3 div {
+    padding: 20px 50px;
+}
+
+
+/* --------------Section 4-------------- */
+
+.section-4 {
+    margin: 20px 0px;
+}
+.section-4 h1 {
+    margin: 30px 0px;
+}
+.reviews {
+    gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .section-4 div {
+        width: 100%;
+    }
+    .section-4 div img {
+        width: 90%;
+    }
+}
+
+
+
+/* --------------Section 5 (mobile)-------------- */
+.section-5 {
+    margin-top: 40px;
+    width:100%;
+    gap: 10px;
+}
+.section-5 img {
+    width: 90%;
+}
+
+/* --------------Footer-------------- */
+
+/* The top part of the footer */
+.top-part{
+    text-align: center;
+    color:#F9F9F9;
+    padding: 20px 0px;
+    background-color: #407EC9;
+    gap: 20px;
+}
+footer hr {
+    width: 100%;
+    border: 0.5px solid rgba(155, 155, 155, 0.09);
+}
+
+/* The middle part of the footer */
+.middle-part{
+    gap: 100px;
+    color: #F9F9F9;
+    background-color: #407EC9;
+    padding: 30px;
+}
+
+.middle-part div {
+    gap: 15px;  
+}
+
+#sign-up {
+    display: inline;
+}
+#sign-up input {
+    padding: 5px;
+}
+.submit {
+    background-color: #333;
+    color: #F9F9F9;
+    padding: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .middle-part {
+        gap: 0px;
+        padding: 5px;
+    }
+    .links {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    footer hr {
+        border: 1px solid rgb(255, 255, 255);
+    }
+    .contacts {
+        width: 100%;
+        justify-content: start;
+        align-items: start;
+    }
+    .sites {
+        gap: 10px;
+    }
+    .newsletter {
+        width: 100%;
+    }
+    #sign-up {
+        width: 100%;
+        justify-self: center;
+    }
+    #sign-up #email {
+        width: 80%;
+    }
+}
+
+/* The bottom part of the footer */
+.bottom-part{
+    background-color: #1A355C;
+    color: #F9F9F9;
+    align-items: center;
+    padding: 30px;
+    gap: 100px;
+    padding-left: 380px;
+
+}
+.choices{
+    justify-content: center;
+}
+@media only screen and (max-width: 1000px) {
+    .bottom-part {
+        padding: 50px 70px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bottom-part {
+        padding: 5px;
+        gap: 5px;
+    }
+    .choices {
+        justify-content: space-between;
+        gap: 10px;
+
+    }
+}
+.hide{
+    display: none;
+}
