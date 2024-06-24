@@ -1,3 +1,0 @@
-finish content for mobile
-check alt 
-fix text in flex items desktop
